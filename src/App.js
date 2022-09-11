@@ -2,6 +2,7 @@
 import './App.css';
 import React, { Component } from 'react'
 import News from './components/News';
+import { Navbar } from './components/Navbar';
 
 export class App extends Component {
   render() {
@@ -61,7 +62,8 @@ export class App extends Component {
     ]
 
     return (
-      <div className='container my-4'>
+      <div className='container'>
+        <Navbar/>
         <News articles ={articles}/>
 
       </div>

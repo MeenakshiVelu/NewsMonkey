@@ -11,10 +11,11 @@ export class NewsItem extends Component {
 
         return (
             <div className="my-3 text-center">
+
                 <div class="card" style={{ width: "18rem" }}>
                     <img src={(urlToImage ? urlToImage : "https://www.reuters.com/resizer/FQp6aCEO8pemWsHYTb5B5WUYGPY=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/SGV2N5MGRBP33CZ56U2JGAY3RE.jpg")} class="card-img-top" alt="..." style={{ height: "12rem" }} />
                     <div class="card-body" style={{ height: "16rem" }}>
-                        <h5 class="card-title">{title.slice(0,50)}</h5>
+                        <h5 class="card-title">{title.slice(0, 50)}</h5>
                         <p class="card-text">{(description ? description.slice(0, 50) : "")}...</p>
                         <a href={url} target="_blank" class="btn btn-primary">Read More</a>
                     </div>
