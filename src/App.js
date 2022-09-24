@@ -3,6 +3,7 @@ import './App.css';
 import React, { Component } from 'react'
 import News from './components/News';
 import { Navbar } from './components/Navbar';
+import Spinner from './components/Spinner';
 
 export class App extends Component {
   render() {
@@ -64,6 +65,7 @@ export class App extends Component {
     return (
       <div className='container'>
         <Navbar/>
+        {/* <Spinner/> */}
         <News articles ={articles}/>
 
       </div>
